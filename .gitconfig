@@ -1,0 +1,6 @@
+[user]
+	name = Jan Cofta
+	email = jan.cofta@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = true
