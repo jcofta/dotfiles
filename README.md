@@ -2,15 +2,19 @@
 
 ## Overview
 
-This repo is a skeleton/template repo for tracking dotfiles.  It contains
-a utility ([dfm](https://github.com/justone/dfm)) to help with managing and
-updating your dotfiles.
+- profile, zsh and bash configs
+- a lot of useful shell aliases
+- my .gitconfig, .dircolors, .tmux.config
+
+## How to install?
+
+    curl https://raw.githubusercontent.com/jcofta/dotfiles/master/install.sh | sh
 
 ## Using this repo
 
 First, fork this repo.
 
-Then, add your dotfiles:
+Then, add/modify the dotfiles:
 
     $ git clone git@github.com:username/dotfiles.git .dotfiles
     $ cd .dotfiles
@@ -20,9 +24,7 @@ Then, add your dotfiles:
 
 Finally, to install your dotfiles onto a new system:
 
-    $ cd $HOME
-    $ git clone git@github.com:username/dotfiles.git .dotfiles
-    $ ./.dotfiles/bin/dfm install # creates symlinks to install files
+    $ curl https://raw.githubusercontent.com/<username>/dotfiles/master/install.sh | sh
 
 ## Full documentation
 
