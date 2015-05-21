@@ -39,7 +39,7 @@ alias as='sudo apt-cache search'
 alias au='sudo apt-get update'
 
 #restart router
-if [ -e $HOME/bin.reboot_router.py ]; then
+if [ -e $HOME/bin/reboot_router.py ]; then
     alias rr='python $HOME/bin/reboot_router.py'
 fi
 
