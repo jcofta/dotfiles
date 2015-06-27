@@ -43,6 +43,8 @@ if [ -e $HOME/bin/reboot_router.py ]; then
     alias rr='python $HOME/bin/reboot_router.py'
 fi
 
+stty -ixon
+
 #copy to X's clipboard
 #usage: <command> | xc
 alias xc='xclip -selection c'
