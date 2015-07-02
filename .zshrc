@@ -5,9 +5,12 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerline"
-#ZSH_THEME="agnoster"
-
+if [ `fc-list | grep Powerline -c` -gt 0 ]; then
+    ZSH_THEME="powerline"
+    #ZSH_THEME="agnoster"
+else
+    ZSH_THEME="gentoo"
+fi
 
 TERM="xterm-256color"
 
@@ -50,7 +53,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git cp python cp tmux)
+plugins=(git cp python tmux)
 
 # User configuration
 
@@ -87,8 +90,8 @@ source $HOME/.profile
 #display local files when changing directory
 chpwd() ls
 #activate virtualenvwrapper
-. /usr/local/bin/virtualenvwrapper.sh
+#. /usr/local/bin/virtualenvwrapper.sh
 #set tmux as default shell
-[[ -z $TMUX ]] && tmux
+#[[ -z $TMUX ]] && tmux
 
 . $HOME/.shellrc.load
