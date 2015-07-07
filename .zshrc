@@ -1,5 +1,9 @@
 # Path to your oh-my-zsh installation.
 ZSH=$HOME/.oh-my-zsh
+if [ ! -d $ZSH ]; then
+    echo "Error [.zshrc] Install oh-my-zsh to use the themes!\
+	Try: git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME"
+fi
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
