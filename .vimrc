@@ -139,3 +139,11 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
  
 "------------------------------------------------------------i
+
+" Show trailing whitespace and spaces before a tab:
+match ExtraWhitespace /\s\+$\| \+\ze\t/
+" Highlight them
+highlight ExtraWhitespace ctermbg=red guibg=red
+
+" Turn on the ctags
+set tags=tags
