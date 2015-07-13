@@ -10,7 +10,8 @@ fi
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 if [ `fc-list | grep Powerline -c` -gt 0 ]; then
-    ZSH_THEME="powerline"
+    ZSH_THEME="gentoo"
+    #ZSH_THEME="powerline"
     #ZSH_THEME="agnoster"
 else
     ZSH_THEME="gentoo"
