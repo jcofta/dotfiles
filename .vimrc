@@ -146,4 +146,4 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " Turn on the ctags
-set tags=tags
+set tags=tags;
