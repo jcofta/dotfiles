@@ -14,7 +14,7 @@ if [ `fc-list | grep Powerline -c` -gt 0 ]; then
     #ZSH_THEME="powerline"
     #ZSH_THEME="agnoster"
 else
-    ZSH_THEME="gentoo"
+    ZSH_THEME="robbyrussell"
 fi
 
 TERM="xterm-256color"
