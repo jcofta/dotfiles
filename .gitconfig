@@ -2,7 +2,7 @@
 	name = Jan Cofta
 	email = jan.cofta@gmail.com
 [core]
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
 [push]
 	default = simple
