@@ -1,0 +1,25 @@
++ t r & ! t t
+d       Diff against file of same name in other directory
+        if [ "%d" = "%D" ]; then
+	          echo "The two directores must be different"
+		            exit 1
+			            fi
+				            if [ -f %D/%f ]; then        # if two of them, then
+					              bcompare %f %D/%f &
+						              else
+							                echo %f: No copy in %D/%f
+									        fi
+
+										x       Diff file to file
+										        if [ -f %D/%F ]; then        # if two of them, then
+											          bcompare %f %D/%F &
+												          else
+													            echo %f: No copy in %D/%f
+														            fi
+
+															    D       Diff current directory against other directory
+															            if [ "%d" = "%D" ]; then
+																              echo "The two directores must be different"
+																	                exit 1
+																			        fi
+																				        bcompare %d %D &
