@@ -110,3 +110,5 @@ if ! shopt -oq posix; then
   fi
 fi
 . /usr/local/bin/virtualenvwrapper.sh
+
+. $HOME/.shellrc.load

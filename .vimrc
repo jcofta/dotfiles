@@ -114,16 +114,19 @@ set pastetoggle=<F11>
 
 "------------------------------------------------------------
 " Indentation options
-
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 " size of a hard tabstop
 "set tabstop=4
 
 " size of an "indent"
-set shiftwidth=4
+"set shiftwidth=4
 
 " a combination of spaces and tabs are used to simulate tab stops at a width
 " other than the (hard)tabstop
-set softtabstop=4
+"set softtabstop=4
+
+" make "tab" insert indents instead of tabs at the beginning of a line
+"set smarttab
 
 "------------------------------------------------------------
 " Mappings {{{1
@@ -153,3 +156,15 @@ set tags=tags;
 if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+vnoremap < <gv
+vnoremap > >gv
+
+hi Search cterm=NONE ctermfg=Black ctermbg=Lightcyan
+"highlight Search guibg=peru guifg=wheat gui=none
+"highlight Comment ctermbg=DarkGray
+"highlight Constant ctermbg=Blue
+"highlight Normal ctermbg=Black
+"ighlight NonText ctermbg=Black
+"highlight Special ctermbg=DarkMagenta
+"highlight Cursor ctermbg=Green
