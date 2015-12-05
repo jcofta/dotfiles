@@ -4,6 +4,7 @@
 [core]
 	autocrlf = false
 	safecrlf = true
+	editor = vim
 [push]
 	default = simple
 [credential]
