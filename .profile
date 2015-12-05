@@ -22,29 +22,17 @@ if [[ ! :$PATH: == *:"$HOME/bin":* ]] ; then
     PATH="$HOME/bin:$PATH"
 fi
 fi
+
 # set PATH to local env // script.sh instead of ./script.sh
 PATH="$PATH":.
 
 #aliases
-alias h='cd $HOME'
 alias py='python'
 alias py3='python3'
 alias ipy='ipython'
 alias ipy3='ipython3'
-alias yt-dl='youtube-dl'
 
 #apt aliases
 alias ai='sudo apt-get install'
 alias as='sudo apt-cache search'
 alias au='sudo apt-get update'
-
-#restart router
-if [ -e $HOME/bin/reboot_router.py ]; then
-    alias rr='python $HOME/bin/reboot_router.py'
-fi
-
-#stty -ixon
-
-#copy to X's clipboard
-#usage: <command> | xc
-alias xc='xclip -selection c'
