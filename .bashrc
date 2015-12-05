@@ -109,6 +109,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. /usr/local/bin/virtualenvwrapper.sh
 
 . $HOME/.shellrc.load

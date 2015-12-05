@@ -2,7 +2,7 @@
 ZSH=$HOME/.oh-my-zsh
 if [ ! -d $ZSH ]; then
     echo "Error [.zshrc] Install oh-my-zsh to use the themes!\
-	Try: git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME"
+	Try: git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh"
 fi
 
 # Set name of the theme to load.
@@ -94,9 +94,5 @@ source $HOME/.profile
 
 #display local files when changing directory
 chpwd() ls
-#activate virtualenvwrapper
-#. /usr/local/bin/virtualenvwrapper.sh
-#set tmux as default shell
-#[[ -z $TMUX ]] && tmux
 
 . $HOME/.shellrc.load
